@@ -1,0 +1,110 @@
+html,
+body,
+.grid-container {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.char-on {
+    background: #068611;
+    color: #ddd015;
+    font-weight: bold;
+}
+
+.char-off {
+    background: #e7e7e7;
+    color: #bebebe;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0 0;
+    grid-template-areas: "Solution Solution Solution Solution" "Letters Letters Image Image" "Buttons Buttons Image Image";
+}
+
+.Solution {
+    grid-area: Solution;
+    font-size: 5em;
+    letter-spacing: 8px;
+    text-align: center;
+    align-self: center;
+}
+
+.Image {
+    grid-area: Image;
+    text-align: center;
+    align-self: center;
+}
+
+.Letters {
+    grid-area: Letters;
+    font-size: 6em;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    text-align: center;
+    align-self: center;
+
+}
+
+.Buttons {
+    grid-area: Buttons;
+    text-align: center;
+    align-self: center;
+}
+
+.Image > svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: translate(-50%, -50%) scale(0.01,0.01);
+
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1,1);
+    }
+}
+
+#info {
+    display: none;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    position: absolute;
+    transform-origin: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.01,0.01);
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    height: 80%;
+    background: rgb(46, 139, 87);
+    color: rgb(244, 164, 96);
+    padding: 10px;
+    z-index: 1000;
+    font-size: 8em;
+    animation: zoominoutsinglefeatured 3s;
+    animation-fill-mode: forwards;  
+}
+
+#help {
+    visibility: hidden;
+    background-color: rgba(50, 50, 50, 0.7);
+    color: darkgoldenrod;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    right: 8px;
+    top: 56px;
+    padding: 4px 6px;
+}

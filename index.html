@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hangman by FB</title>
+    <script src="countdown.js"></script>
+    <link href="countdown.css" rel="stylesheet" type="text/css">
+    <script src="hangman.js"></script>
+    <link href="hangman.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="main()">
+    <div id="info"></div>
+    <div class="grid-container">
+        <div id="solution" class="Solution">The Hangman by FB</div>
+        <div id="image" class="Image">
+            <svg width="400" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <image href="img/hills.svg"/>
+                <line id="svg_1" style="display: none;" y2="23.71973" x2="124.14913" y1="227.01754" x1="124.14913"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <line id="svg_2" style="display: none;" y2="23.39532" x2="250.76766" y1="23.39532" x1="123.70469"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <line id="svg_3" style="display: none;" y2="23.21756" x2="185.44914" y1="88.81755" x1="123.84914"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <line id="svg_4" style="display: none;" y2="23.71973" x2="250.14912" y1="47.01755" x1="250.14912"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <ellipse id="svg_5" style="display: none;" ry="19" rx="19" id="svg_5" cy="66.61755" cx="250.04913"
+                    stroke-width="4" stroke="#ff7f00" fill="#ffaa56" />
+                <line id="svg_6" style="display: none;" y2="146.77572" x2="249.84913" y1="86.22707" x1="249.84913"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <line id="svg_7" style="display: none;" y2="86.41755" x2="249.44913" y1="116.81755" x1="218.24913"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <line id="svg_8" style="display: none;" y2="86.41755" x2="250.24909" y1="117.61755" x1="281.04913"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <line id="svg_9" style="display: none;" y2="146.0366" x2="249.44913" y1="176.4366" x1="218.24913"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+                <line id="svg_10" style="display: none;" y2="146.0366" x2="250.24909" y1="177.2366" x1="281.04913"
+                    stroke-width="4" stroke="#ff7f00" fill="none" />
+            </svg>
+            <div id="errorCounter"></div>
+        </div>
+        <div id="letters" class="Letters">
+        </div>
+        <div id="buttons" class="Buttons">
+            <div id="app"></div>
+        </div>
+    </div>
+    <div id="help">
+        HELP<br/><br/>
+        F2 - Start the game<br/>
+        F1 - This help
+    </div>    
+</body>
+
+</html>
