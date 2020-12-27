@@ -1,6 +1,6 @@
 # Hangman
 
-This Git repository was created for testing purposes, but the software in it is working. It is a small Javascript project that implements the well-known pun called the hangman.
+This Git repository was created for testing purposes, but the software in it is working. It is a small Javascript project that implements the well-known word game called the hangman.
 
 Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
 
